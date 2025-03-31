@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Pages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Asia Explorer Travel Tour</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, GitHub Actions!</h1>
+  <!-- Header and Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Asia Explorer</div>
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Experience the Wonders of Asia</h1>
+      <p>Your journey to unforgettable memories starts here</p>
+      <a href="#destinations" class="btn">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations-container">
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?great-wall-of-china" alt="Great Wall of China">
+        <h3>Great Wall of China</h3>
+        <p>A marvel of ancient engineering stretching across the Chinese landscape.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?taj-mahal" alt="Taj Mahal">
+        <h3>Taj Mahal</h3>
+        <p>A testament of eternal love in the heart of India.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?mount-fuji" alt="Mount Fuji">
+        <h3>Mount Fuji</h3>
+        <p>An iconic peak of Japan offering breathtaking views and serene landscapes.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?angkor-wat" alt="Angkor Wat">
+        <h3>Angkor Wat</h3>
+        <p>Majestic ancient temples steeped in history in Cambodia.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?bali" alt="Bali">
+        <h3>Bali</h3>
+        <p>A tropical paradise known for its beaches, culture, and landscapes.</p>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/featured/?singapore" alt="Singapore">
+        <h3>Singapore</h3>
+        <p>A modern city-state that blends tradition with futuristic architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages">
+    <h2>Travel Packages</h2>
+    <div class="packages-container">
+      <div class="package-card">
+        <h3>Luxury Tour</h3>
+        <p>Experience Asia in style with premium accommodations and exclusive itineraries.</p>
+        <button onclick="bookNow('Luxury Tour')">Book Now</button>
+      </div>
+      <div class="package-card">
+        <h3>Adventure Tour</h3>
+        <p>Thrilling experiences that combine culture, nature, and adventure.</p>
+        <button onclick="bookNow('Adventure Tour')">Book Now</button>
+      </div>
+      <div class="package-card">
+        <h3>Budget Tour</h3>
+        <p>Explore Asia on a budget without compromising on adventure.</p>
+        <button onclick="bookNow('Budget Tour')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Asia Explorer Travel Tours. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
